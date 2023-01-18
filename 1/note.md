@@ -6,3 +6,7 @@
 ```matlab
 my_an_f = @(text) length(split(text, ' '))
 ```
+
+### Инструкция
+
+1. Выполнить скрипт `script.mlx`
