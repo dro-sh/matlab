@@ -10,5 +10,5 @@ d = 1;
 
 for i=1:360
     rotate(h,direction,d);
-    pause(0.05);
+    drawnow;
 end
