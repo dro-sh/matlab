@@ -1,0 +1,1 @@
+uicontrol String OK Callback plot(rand(1e3,1),sqrt(2)*rand(1e3,1))
