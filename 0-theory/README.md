@@ -209,7 +209,7 @@ quaternion(0,1,0,0)\*quaternion(0,0,1,0) == quaternion(0,0,0,1): 1
 isequal({[]},{}): 0
 isequal([{}],{}): 1
 isequal("'",''''): 1
-isequal("'",''''): 0
+isequal(""",''''): 0
 isequal('"',""""): 1
 ismember('',{''}): 1
 ismember('''',{'"'}): 0
