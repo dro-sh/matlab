@@ -161,41 +161,44 @@ ans =
 
 Тут строки только в которых ошибки
 
-```matlab
-'ans - Character vector is not terminated properly
-a(8,9){2,3}.x.y.z = 0 - Invalid array indexing
-b(2){3}=1 - Invalid array indexing
-x - Unrecognized function or variable "x"
-x==x=x - Incorrect use of "=" operator. Assign a value to a variable using "=" and compare values for equality using "==".
-[x,y] = [1,2] - Too many output arguments
-[x,y] = {1,2} - Too many output arguments
-[x,y,z]=deal(1,2) - The number of outputs should match the number of inputs.
-[x,y] = deal(a{:}) - The number of outputs should match the number of inputs
-error - Not enough input arguments
-error error - Error using script \n error - Как бы ошибка, но вызывается скриптом
 
-warning - The default warning state is 'on'. Warnings not set to the default are
-State Warning Identifier
-off MATLAB:JavaComponentThreading
-off MATLAB:JavaEDTAutoDelegation
-off MATLAB:RandStream:ActivatingLegacyGenerators
-off MATLAB:RandStream:ReadingInactiveLegacyGeneratorState
-off MATLAB:class:DynPropDuplicatesMethod
-off MATLAB:mir_warning_unrecognized_pragma
-off MATLAB:subscripting:noSubscriptsSpecified
-off MATLAB:uiflowcontainer:DeprecatedFunction
-off MATLAB:uigridcontainer:DeprecatedFunction
-off MATLAB:uitab:DeprecatedFunction
-off MATLAB:uitabgroup:DeprecatedFunction
+`'ans - Character vector is not terminated properly`
 
-continue - A CONTINUE may only be used within a FOR or WHILE loop, and then only within the same file as its corresponding FOR or WHILE statement
-c{1}{2}(3) - Index exceeds the number of array elements. Index must not exceed 2
-for = 2 - Incorrect use of '=' operator. Assign a value to a variable using '=' and compare values for equality using '=='
-if NaN==1, then 1, else 2, end - Unrecognized function or variable 'then'.
-a += 1 - Unrecognized function or variable 'a'
-a(2:3,3:end)=[0;0] - Unable to perform assignment because the size of the left side is 2-by-3 and the size of the right side is 2-by-1.
-inv(b) - Matrix must be square
-```
+`a(8,9){2,3}.x.y.z = 0 - Invalid array indexing`
+
+`b(2){3}=1 - Invalid array indexing`
+
+`x - Unrecognized function or variable "x"`
+
+`x==x=x - Incorrect use of "=" operator. Assign a value to a variable using "=" and compare values for equality using "==".`
+
+`[x,y] = [1,2] - Too many output arguments`
+
+`[x,y] = {1,2} - Too many output arguments`
+
+`[x,y,z]=deal(1,2) - The number of outputs should match the number of inputs.`
+
+`[x,y] = deal(a{:}) - The number of outputs should match the number of inputs`
+
+`error - Not enough input arguments`
+
+`error error - Error using script \n error - Как бы ошибка, но вызывается скриптом`
+
+
+`continue - A CONTINUE may only be used within a FOR or WHILE loop, and then only within the same file as its corresponding FOR or WHILE statement`
+
+`c{1}{2}(3) - Index exceeds the number of array elements. Index must not exceed 2`
+
+`for = 2 - Incorrect use of '=' operator. Assign a value to a variable using '=' and compare values for equality using '=='`
+
+`if NaN==1, then 1, else 2, end - Unrecognized function or variable 'then'.`
+
+`a += 1 - Unrecognized function or variable 'a'`
+
+`a(2:3,3:end)=[0;0] - Unable to perform assignment because the size of the left side is 2-by-3 and the size of the right side is 2-by-1.`
+
+`inv(b) - Matrix must be square`
+
 
 #### предсказать верно ли
 
@@ -213,30 +216,68 @@ ismember('''',{'"'}): 0
 ismember('''',{''''}): 1,
 ismember('''',''''): 1
 ismember('''',"'"): 1
-%-----предсказать, пусто (isempty) или нет:
+```
+
+### предсказать, пусто (isempty) или нет:
+```matlab
 isempty( {{}} ): 0
 isempty( [[{}]] ): 1
 isempty( {[]} ): 0
 isempty( setdiff({'a','b','b','c'},{'a','b','c'}) ): 1
 isempty( setdiff({},{'a','b','c'}) ): 1
 isempty( ismember([],[[]]) ): 1
-%-----предсказать ошибку при выполнении каждой из следующих строк:
-'
-'''
-'''''
-"""
-"""""
-''"
-"""'
-"'
-'"'"'
-"
-""" ''' '''
-`'`
-""`' "`"`" '`"`'' ~'' ~"" ~'`''
-'-'-'-'-'
--'-'-'-'-'
-[ ' ' ' ' ' ' ' ]
-1/[]
-[]^[]
 ```
+
+
+### предсказать ошибку при выполнении каждой из следующих строк:
+
+Тут только строки, в которых ошибки:
+
+`'`
+
+`'''`
+
+`'''''`
+
+`"""`
+
+`"""""`
+
+`''"`
+
+`"""'`
+
+`"'`
+
+`'"'"'`
+
+``"``
+
+``""" ''' '''``
+
+``'``
+
+```
+""`'
+"`"`"
+'`"`''
+```
+
+`~''`
+
+`~""`
+
+```
+~'`''
+```
+
+
+`'-'-'-'-'`
+
+`-'-'-'-'-'`
+
+`[ ' ' ' ' ' ' ' ]`
+
+`1/[]`
+
+`[]^[]`
