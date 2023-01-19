@@ -5,7 +5,9 @@
 ### Задачи
 #### First
 
-```
+Первая строчка: выполняемая команда, следующая - результат.
+
+```matlab
 a=ones(5)
 a =
      1     1     1     1     1
@@ -45,7 +47,8 @@ output: a =
 
 #### Second
 
-```
+Первая строчка - выполняемая команда, следущая - результат
+```matlab
 clear all - ничего
 
 a = j, i,j - системные мнимые единицы
@@ -126,7 +129,8 @@ a =
 
 #### Third
 
-```
+Номер задачи, ниже результат.
+```matlab
 3.1
 ans =
 1
@@ -154,7 +158,7 @@ ans =
 
 Тут строки только в которых ошибки
 
-```
+```matlab
 'ans - Character vector is not terminated properly
 a(8,9){2,3}.x.y.z = 0 - Invalid array indexing
 b(2){3}=1 - Invalid array indexing
@@ -192,7 +196,7 @@ inv(b) - Matrix must be square
 
 #### предсказать верно ли
 
-```
+```matlab
 2^2^2^2 == 2^2^(2^2): 1
 2^2^2^2 == 2^(2^(2^2)): 0
 quaternion(0,1,0,0)\*quaternion(0,0,1,0) == quaternion(0,0,0,1): 1
