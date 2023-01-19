@@ -1,9 +1,8 @@
 syms a b c 
 syms d e f g [2 1];
 
-%d = [-0.5; 0];
-%f = [0.5; 0];
-%e = [0; sqrt(3) / 2];
+%Если не запускается из-за ошибки syms, то g объявляем так: g = sym('g',[2 1]);
+
 d = [0; 0];
 f = [1; 0];
 e = [0.5; sqrt(3) / 2];
@@ -19,8 +18,6 @@ bet = acos((a^2 + c^2 - b^2) / (2 * a * c)) / pi * 180;
 
 s = eval(alp - bet);
 
-%eval(alp - bet);
-
 surfl(g1, g2, real(s))
 shading flat
 colormap gray
@@ -28,4 +25,3 @@ colormap gray
 res = s(150, 150);
 
 res
-
