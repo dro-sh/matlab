@@ -233,59 +233,64 @@ isempty( ismember([],[[]]) ): 1
 
 Тут только строки, в которых ошибки:
 
-`'`
+`'` Error: Character vector is not terminated properly.
 
-`'''`
+`'''` Error: Character vector is not terminated properly.
 
-`'''''`
+`'''''` Error: Character vector is not terminated properly.
 
-`"""`
+`"""` Error: String is not terminated properly.
 
-`"""""`
+`"""""` Error: String is not terminated properly.
 
-`''"`
+`''"` Error: String is not terminated properly.
 
-`"""'`
+`"""'` Error: String is not terminated properly.
 
-`"'`
+`"'` Error: String is not terminated properly.
 
-`'"'"'`
+`'"'"'` Error: String is not terminated properly.
 
-``"``
+``"`` Error: Invalid text character. Check for unsupported symbol, invisible character, or pasting of
+non-ASCII characters.
 
-``""" ''' '''``
+``""" ''' '''`` Error: String is not terminated properly.
 
-```
-`'`
-""`'
-"`"`"
-'`"`''
-```
-
-`~""`
-
-```
-~'`''
+``` 
+`'`       Error: Invalid text character. Check for unsupported symbol, invisible character, or pasting of non-ASCII characters.
+""`'      Error: Invalid text character. Check for unsupported symbol, invisible character, or pasting of non-ASCII characters.
+"`"`"     Error: Invalid text character. Check for unsupported symbol, invisible character, or pasting of non-ASCII characters.
+'`"`''    Error: Invalid text character. Check for unsupported symbol, invisible character, or pasting of non-ASCII characters.
 ```
 
 
-`'-'-'-'-'`
+`~""` Unary operator '~' is not supported for operand of type 'string'.
+
+``` 
+~'`''     Error: Character vector is not terminated properly.
+```
+
+
+`'-'-'-'-'` Error: Character vector is not terminated properly.
 
 !!!
 
 `-'-'-'-'` - сработает
 
-`-'-'-'-'-'` - а вот следующий нет
+`-'-'-'-'-'` - а вот следующий нет; Error: Character vector is not terminated properly.
 
 !!!
 
 `[ ' ' ' ' ' ']'` - сработает
 
-`[ ' ' ' ' ' ' ' ]`- а вот следующий нет
+`[ ' ' ' ' ' ' ' ]`- а вот следующий нет; Error: Character vector is not terminated properly.
 
-`1/[]`
+`1/[]` Error using  /
+Matrix dimensions must agree.
 
-`[]^[]`
+`[]^[]` Error using  ^ 
+Incorrect dimensions for raising a matrix to a power. Check that the matrix is square and the power is
+a scalar. To operate on each element of the matrix individually, use POWER (.^) for elementwise power.
 
 #### Общие вопросы
 
