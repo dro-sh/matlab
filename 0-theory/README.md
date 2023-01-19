@@ -298,8 +298,9 @@ a scalar. To operate on each element of the matrix individually, use POWER (.^) 
 
 Могут ли индексы массивов в Matlab принимать нулевые значения? (Нет)
 
-Чем исполнение файла-скрипта отличается от исполнения файла-функции? (Можно требовать аргументы и передавть их?)
+Чем исполнение файла-скрипта отличается от исполнения файла-функции? (Можно требовать аргументы и передавть их, имеют собственную рабочую область
+https://docs.exponenta.ru/matlab/matlab_prog/scripts-and-functions.html).
 
-Какие функции позволяют работать в Matlab с большими разреженными массивами? (Sparse, Issparce, Normest, Sprank и др. Подробнее https://hub.exponenta.ru/post/spravochnik-po-matlab-rabota-s-razrezhennymi-matritsami-vgpotemkin329)
+Какие функции позволяют работать в Matlab с большими разреженными массивами? (Sparse, Issparce, Normest, Sprank и др. Подробнее https://hub.exponenta.ru/post/spravochnik-po-matlab-rabota-s-razrezhennymi-matritsami-vgpotemkin329).
 
 Назовите наиболее полезный для вас пакет (toolbox) в Matlab. (Ну тут каждый сам xd)
